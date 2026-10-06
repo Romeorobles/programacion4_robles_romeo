@@ -1,0 +1,179 @@
+# =====================================================================
+# .gitignore general - Programación 4 (Robles Romeo)
+# Aplica a TODAS las carpetas y subcarpetas del repo.
+# Proyectos: Node.js, React Native (Expo/CLI), Kotlin (Android/Gradle),
+#            Flutter y Dart.
+# Nota: un patrón sin "/" al inicio coincide en cualquier nivel.
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# Sistema operativo
+# ---------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+.directory
+.Trash-*
+
+# ---------------------------------------------------------------------
+# Editores / IDEs
+# ---------------------------------------------------------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+*.swp
+*.swo
+.history/
+.fleet/
+
+# ---------------------------------------------------------------------
+# Variables de entorno y secretos (NUNCA subir)
+# ---------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.p8
+*.p12
+*.key
+*.jks
+*.keystore
+!**/debug.keystore
+key.properties
+google-services.json
+GoogleService-Info.plist
+
+# ---------------------------------------------------------------------
+# Logs y temporales
+# ---------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.tmp
+*.temp
+tmp/
+temp/
+
+# ---------------------------------------------------------------------
+# Node.js
+# ---------------------------------------------------------------------
+node_modules/
+.npm/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.pnp.*
+.pnpm-store/
+dist/
+out/
+coverage/
+.nyc_output/
+.eslintcache
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.turbo/
+.vite/
+*.tsbuildinfo
+
+# ---------------------------------------------------------------------
+# React Native (CLI y Expo)
+# ---------------------------------------------------------------------
+.expo/
+.expo-shared/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+*.jsbundle
+# iOS dentro de proyectos RN
+**/ios/Pods/
+**/ios/build/
+**/ios/DerivedData/
+*.xcuserstate
+xcuserdata/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+# Android dentro de proyectos RN
+**/android/app/build/
+**/android/.cxx/
+# Buck / Fastlane
+buck-out/
+.buckd/
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# ---------------------------------------------------------------------
+# Kotlin / Android / Gradle
+# ---------------------------------------------------------------------
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+.navigation/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output.json
+proguard/
+.kotlin/
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+
+# ---------------------------------------------------------------------
+# Flutter / Dart
+# ---------------------------------------------------------------------
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata.lock
+*.g.dart.tmp
+doc/api/
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+# Archivos generados por Flutter para iOS/macOS
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/.symlinks/
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/macos/Flutter/ephemeral/
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+# Linux / Windows desktop generados por Flutter
+**/linux/flutter/ephemeral/
+**/windows/flutter/ephemeral/
+# Web
+**/web/flutter_service_worker.js
