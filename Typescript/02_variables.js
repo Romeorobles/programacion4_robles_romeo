@@ -24,4 +24,12 @@ let alumno = "Romeo Robles";
 let caducado = false;
 console.log(alumno);
 console.log(caducado);
+let equipo = ["PIKACHU", "CHARMANDE", "BULBASAUR"];
+console.log(equipo);
+let pokemonCapturados = null;
+let pokemonInicial;
+let experienciaAcumulada = 98723982737392n;
+let pokemon1 = Symbol("Pikachu");
+let pokemon2 = Symbol("Pikachu");
+console.log(pokemon1 === pokemon2);
 //# sourceMappingURL=02_variables.js.map
