@@ -8,6 +8,10 @@ import Paso5 from './paso5'
 import Paso6 from './paso6'
 import Paso7 from './paso7'
 import Paso8 from './paso8'
+import Paso5mp from './paso5_mp'
+import Paso6mp from './paso6_mp'
+import Paso7mp from './paso7_mp'
+import Paso8mp from './paso8_mp'
 
 // ┌──────────────────────────────────────────────────────────────────┐
 // │  Cambia este número y guarda (Ctrl+S) para navegar entre pasos. │
@@ -38,6 +42,14 @@ export default function Index() {
       return <Paso7 />
     case 8:
       return <Paso8 />
+    case 5.1:
+      return <Paso5mp />
+    case 6.1:
+      return <Paso6mp />
+    case 7.1:
+      return <Paso7mp />
+    case 8.1:
+      return <Paso8mp />
     default:
       return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
