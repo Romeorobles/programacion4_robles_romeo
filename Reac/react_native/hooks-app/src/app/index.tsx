@@ -9,10 +9,11 @@ import Paso5 from './paso5'
 import Paso6 from './paso6'
 import Paso7 from './paso7'
 import Paso8 from './paso8'
-import Paso1mp from './paso1_mp'
-import Paso2mp from './paso2_mp'
-import Paso3mp from './paso3_mp'
-import Paso4mp from './paso4_mp'
+import Paso1mp from './mp_paso1'
+import Paso2mp from './mp_paso2'
+import Paso3mp from './mp_paso3'
+import Paso4mp from './mp_paso4'
+import Paso3SemunaMp from './mp_paso3semuna'
 import Paso5mp from './paso5_mp'
 import Paso6mp from './paso6_mp'
 import Paso7mp from './paso7_mp'
@@ -55,6 +56,8 @@ export default function Index() {
       return <Paso2mp />
     case 3.1:
       return <Paso3mp />
+    case 3.2:
+      return <Paso3SemunaMp />
     case 4.1:
       return <Paso4mp />
     case 5.1:

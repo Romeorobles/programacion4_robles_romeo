@@ -2,14 +2,14 @@
 import { Text, View } from 'react-native'
 import { Paso1 } from './paso1'
 import { Paso2 } from './paso2'
-import { Paso1mp } from './paso1_mp'
-import { Paso2mp } from './paso2_mp'
+import { Paso1 as Paso1mp } from './mp_paso1'
+import { Paso2 as Paso2mp } from './mp_paso2'
 
 // ┌──────────────────────────────────────────────────────────────────┐
 // │  Cambia este número y guarda (Ctrl+S) para navegar entre pasos. │
 // │  1  Paso 1  Texto y vistas básicas                               │
 // │  2  Paso 2  Imágenes y botones                                   │
-// │  N.1  mp LigaPro del paso N                                      │
+// │  N.1  mp fútbol del paso N                                       │
 // └──────────────────────────────────────────────────────────────────┘
 const PASO: number = 2
 
