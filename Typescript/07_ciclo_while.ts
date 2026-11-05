@@ -54,6 +54,9 @@ let indice = 0;
 while (indice< navesEscaneadas.length) {
     const nave = navesEscaneadas[indice];
     if (nave?. tipo === "Caza estelar") {
-
+        indice++;
+        continue;
+    }
+    console.log(`Nave: ${nave?.nombre}, Tipo: ${nave?.tipo}, Velocidad: ${nave?.velocidad}`);
     indice++;
 }

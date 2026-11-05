@@ -1,11 +1,11 @@
 class Boxeador {
-    golpear(: void) {
+    golpear(): void {
         console.log("Golpeando con fuerza");
 
     }
 }
 class Rocky extends Boxeador {
-    golpear(): void {
+    golpeEspecial(): void {
         console.log("Rocky lanza un poderoso gancho ");
 
     }
@@ -13,14 +13,14 @@ class Rocky extends Boxeador {
 
 
 
-class Apollo extends BBoxeador {
+class Apollo extends Boxeador {
     golpeRapido(): void {
-        console.log("Apollo lanza un golpe veloz");ç
+        console.log("Apollo lanza un golpe veloz");
 
     }
 }
 
-const rocky =new =Rocky();
+const rocky =new Rocky();
 rocky.golpear();
 rocky.golpeEspecial();
 const apolloCreek = new Apollo();

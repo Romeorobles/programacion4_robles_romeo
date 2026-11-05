@@ -4,10 +4,15 @@ import Paso1 from './paso1'
 import Paso2 from './paso2'
 import Paso3 from './paso3'
 import Paso3Semuna from './paso3semuna'
+import Paso4 from './paso4'
 import Paso5 from './paso5'
 import Paso6 from './paso6'
 import Paso7 from './paso7'
 import Paso8 from './paso8'
+import Paso1mp from './paso1_mp'
+import Paso2mp from './paso2_mp'
+import Paso3mp from './paso3_mp'
+import Paso4mp from './paso4_mp'
 import Paso5mp from './paso5_mp'
 import Paso6mp from './paso6_mp'
 import Paso7mp from './paso7_mp'
@@ -34,6 +39,8 @@ export default function Index() {
       return <Paso3 />
     case 31:
       return <Paso3Semuna />
+    case 4:
+      return <Paso4 />
     case 5:
       return <Paso5 />
     case 6:
@@ -42,6 +49,14 @@ export default function Index() {
       return <Paso7 />
     case 8:
       return <Paso8 />
+    case 1.1:
+      return <Paso1mp />
+    case 2.1:
+      return <Paso2mp />
+    case 3.1:
+      return <Paso3mp />
+    case 4.1:
+      return <Paso4mp />
     case 5.1:
       return <Paso5mp />
     case 6.1:

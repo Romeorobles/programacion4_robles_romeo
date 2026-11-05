@@ -2,7 +2,7 @@
 import { useWindowDimensions, useColorScheme } from 'react-native'
 import { StyleSheet, Text, View } from 'react-native'
 
-function Paso4() {
+export default function Paso4() {
   const { width, height, scale, fontScale } = useWindowDimensions()
   const esquema = useColorScheme()   // 'light' | 'dark' | null
 
@@ -88,3 +88,14 @@ function Paso4() {
 
 // Estilos adicionales que no estaban en el StyleSheet del paso anterior
 // (se declaran todos juntos en el bloque de referencia al final)
+
+const styles = StyleSheet.create({
+  contenedor: { flex: 1, padding: 24, paddingTop: 60, gap: 12 },
+  titulo: { fontSize: 20, fontWeight: '700' },
+  tarjeta: { borderWidth: 1, borderRadius: 10, padding: 14, gap: 4 },
+  etiqueta: { fontSize: 12 },
+  nombreServidor: { fontSize: 15, fontWeight: '600' },
+  ipServidor: { fontSize: 12, fontFamily: 'monospace' },
+  nota: { borderWidth: 1, borderRadius: 10, padding: 12 },
+  notaTexto: { fontSize: 12, lineHeight: 18 },
+})

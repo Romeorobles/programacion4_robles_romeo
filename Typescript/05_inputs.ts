@@ -1,7 +1,14 @@
 
-let personaje = prompt("Ingrese personaje (Luke, Vader, Organa, Han Solo, Yoda):");
-let edad = Number(prompt("Ingrese edad del personaje:"));
-let fuerza = Number(prompt("Ingrese nivel de fuerza del personaje (0-100):"));
+import { createInterface } from "node:readline/promises";
+import { stdin as input, stdout as output } from "node:process";
+
+// prompt() no existe en Node, por eso usamos readline para leer datos
+const rl = createInterface({ input, output });
+
+let personaje = await rl.question("Ingrese personaje (Luke, Vader, Organa, Han Solo, Yoda): ");
+let edad = Number(await rl.question("Ingrese edad del personaje: "));
+let fuerza = Number(await rl.question("Ingrese nivel de fuerza del personaje (0-100): "));
+rl.close();
 
 if (personaje === "Luke" || personaje === "Vader" || personaje === "Organa" || personaje === "Han Solo" || personaje === "Yoda") {
     if (edad >= 0 && edad <= 100) {

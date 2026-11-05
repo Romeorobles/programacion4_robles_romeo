@@ -1,4 +1,5 @@
 // app/(tabs)/index.tsx
+import { Link } from 'expo-router'
 import { StyleSheet, Text, View } from 'react-native'
 
 export default function Inicio() {
@@ -6,6 +7,7 @@ export default function Inicio() {
     <View style={styles.contenedor}>
       <Text style={styles.titulo}>Panel de Servidores</Text>
       <Text style={styles.subtitulo}>Centro de operaciones de red</Text>
+      <Link href="/servidores" style={styles.subtitulo}>Ver servidores</Link>
     </View>
   )
 }

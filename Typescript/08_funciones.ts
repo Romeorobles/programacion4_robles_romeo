@@ -59,7 +59,7 @@ function formatear(valor:string): string;
 function formatear(valor:boolean): string;
 function formatear(valor: number | string | boolean): string {
     if (typeof valor === "number") {
-        return valor.toLocaleString("es.MX", { minimumFractionDigits: 2 });
+        return valor.toLocaleString("es-MX", { minimumFractionDigits: 2 });
     } else if (typeof valor === "boolean") {
         return `Booleano: ${valor ? "si" : "no"}`;
     }

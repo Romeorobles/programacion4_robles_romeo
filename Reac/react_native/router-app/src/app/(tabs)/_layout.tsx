@@ -24,6 +24,15 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
+        name="liga"
+        options={{
+          title:      'Liga',
+          tabBarIcon: ({ color, size }) => (
+            <TabIcon nombre="liga" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="alertas"
         options={{
           title:      'Alertas',
@@ -50,6 +59,7 @@ export default function TabsLayout() {
 function TabIcon({ nombre, color, size }: { nombre: string; color: ColorValue; size: number }) {
   const icono: Record<string, string> = {
     inicio:   '🖥',
+    liga:     '⚽',
     alertas:  '🔔',
     ajustes:  '⚙',
   }
