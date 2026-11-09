@@ -177,3 +177,4 @@ doc/api/
 **/windows/flutter/ephemeral/
 # Web
 **/web/flutter_service_worker.js
+*.jar
