@@ -49,4 +49,24 @@ fun main() {
     println("Ganó la visita < ${golesLocal < golesVisita}")
     println("Local hizo al menos 3 >= ${golesLocal >= 3}")
     println("Visita hizo máximo 1 <= ${golesVisita <= 1}")
+
+    // OPERADORES LOGICOS
+    println("OPERADORES LOGICOS")
+    val puntosEquipo = 55
+    val licenciaVigente = true
+    val sancionado = false
+    println("AND && clasifica a Libertadores: ${puntosEquipo >= 50 && licenciaVigente}")
+    println("OR || juega torneo internacional: ${puntosEquipo >= 50 || puntosEquipo >= 40}")
+    println("NOT ! puede jugar: ${!sancionado}")
+
+    // OPERADORES DE ASIGNACION
+    println("OPERADORES DE ASIGNACION")
+    var puntosTabla = 40
+    var cuposExtranjeros = 5
+    puntosTabla += 3
+    println("Puntos tras ganar +=: $puntosTabla")
+    puntosTabla -= 1
+    println("Puntos tras sanción -=: $puntosTabla")
+    cuposExtranjeros--
+    println("Cupos de extranjeros restantes --: $cuposExtranjeros")
 }

@@ -3,7 +3,7 @@ fun main() {
 
     var option: Int
     do {
-        println("Laboratorio de Apellido Nombre")
+        println("Laboratorio de Robles Romeo")
         println("1. Agregar Portal")
         println("2. Mostrar Portales")
         println("3. Modificar Portal")
