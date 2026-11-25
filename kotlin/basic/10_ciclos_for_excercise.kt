@@ -14,5 +14,5 @@ fun main(){
         println("Costo Final: $costoFinal")
         presupuestoTotal += costoFinal
     }
-    println("Presupuesto total de la expedicion %1f creditos".format(presupuestoTotal))
+    println("Presupuesto total de la expedicion %.1f creditos".format(presupuestoTotal))
 }

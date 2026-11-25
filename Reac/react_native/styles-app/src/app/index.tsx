@@ -1,5 +1,6 @@
 // app/index.tsx
 import { StyleSheet, Text, View } from 'react-native'
+import { Paso1 } from './paso1'
 import { Paso1RM } from './paso1_rm'
 import { Paso1mp } from './paso1_mp'
 import { Paso2mp } from './paso2_mp'
@@ -27,6 +28,8 @@ const PASO: number = 6.1
 
 export default function Index() {
   switch (PASO) {
+    case 1:
+      return <Paso1 />
     case 1.1:
       return <Paso1RM />
     case 1.2:
