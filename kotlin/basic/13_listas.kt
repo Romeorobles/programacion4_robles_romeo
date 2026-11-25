@@ -14,6 +14,7 @@ fun main() {
     var interacion: Int = 1
     for (destino in destinos) {
         println("Destino $interacion : $destino")
+        interacion++
     }
     val costos = listOf(100, 150, 200, 80,120)
     val totalCostos = calcularTotal(costos)

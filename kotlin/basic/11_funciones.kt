@@ -44,6 +44,6 @@ fun main(){
     val descuentoCliente = calcularPrecio(123.5)
     println("El cliente Romeo tiene este descuento : $descuentoCliente")
     val totalEnergias = arrayOf (30,50,80,100,60)
-    println("Energia total $totalEnergias")
+    println("Energia total ${calcularEnergiaTotal(totalEnergias)}")
 
 }

@@ -1,7 +1,7 @@
-class Nave{
+class NaveEncapsulada{
     private var energia = 100
     
-    fun recargar(cantidad:int){
+    fun recargar(cantidad:Int){
         if ( cantidad > 0){
             energia += cantidad
         } else{
@@ -13,7 +13,7 @@ class Nave{
         println("Energia : $energia")
         
     }
-    fun asignarEnergia(cantidad:int){
+    fun asignarEnergia(cantidad:Int){
         energia = cantidad
     }
 }

@@ -1,18 +1,16 @@
-open class Vehiculo(val nombre:string){
+open class Vehiculo(val nombre:String){
     fun mostrarNombre(){
         println("Nombre del vehiculo: $nombre")
     }
 }
 
-class NaveEspacial(nombre:string, val energia:int){
-    Vehiculo(nombre){
-        fun mostrarEnergia(){
-            println("Energia de la nave: $energia")
-        }
+class NaveEspacial(nombre:String, val energia:Int): Vehiculo(nombre){
+    fun mostrarEnergia(){
+        println("Energia de la nave: $energia")
     }
 }
 fun main(){
-    val = naveInterdimensional = NaveEspacial("Nave Interdimensional", 100)
+    val nave = NaveEspacial("Nave Interdimensional", 100)
     nave.mostrarNombre()
     nave.mostrarEnergia()
 }

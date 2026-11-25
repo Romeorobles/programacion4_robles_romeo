@@ -9,8 +9,8 @@ class Pistola(var tipo:String, var disparos: Int=0 ){
     fun disparar(){
         println("Disparando para ir a otro Universo")
     }
-    fun RoblespuedeDespegar(var energia: int = 0){
-        var combustible : int = energia*disparos
+    fun RoblespuedeDespegar(energia: Int = 0){
+        var combustible : Int = energia*disparos
         if (combustible >= 0){
             println("Pistola $tipo tiene potencia para despegar")
         } else{

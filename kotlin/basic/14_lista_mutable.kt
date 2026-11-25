@@ -8,7 +8,7 @@ fun main() {
         println("2. Mostrar Portales")
         println("3. Modificar Portal")
         println("4. Eliminar Portal")
-        println("5. Agregar Portal")
+        println("5. Salir")
         option = readLine()!!.toInt()
         when (option) {
             1 -> {
@@ -41,6 +41,19 @@ fun main() {
                 } else{
                     println("Indice no valido")
                 }   
+            }
+            4 -> {
+                println("Indice a eliminar")
+                for (indice in portales.indices) {
+                    println("$indice: ${portales[indice]}")
+                }
+                val indice = readLine()!!.toInt()
+                if (indice in portales.indices) {
+                    portales.removeAt(indice)
+                    println("Portal eliminado")
+                } else{
+                    println("Indice no valido")
+                }
             }
            
         }
